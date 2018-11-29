@@ -62,6 +62,12 @@ body {
 }
 
 .btn-topo:hover {
+  color: white;
+  background-color: #00CD14;
+	border: #00CD14 ;
+}
+
+.btn-topo:hover {
   background-color: #00CD14;
 	border: #00CD14 ;
 }
@@ -237,6 +243,14 @@ body {
     flex: 1;
     margin-right: 0px;
   }
+
+  .pin-blue {
+    flex-direction: column;
+    align-items: center;
+    min-height: 325px;
+    background: none;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -244,5 +258,10 @@ body {
 		width: 100%;
 		min-height: 291px;
 		max-height: 291px;
-	}
+  }
+
+  .mosaico {
+    height: auto;
+    width: 100%;
+  }
 }
