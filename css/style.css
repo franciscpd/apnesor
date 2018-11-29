@@ -126,6 +126,42 @@ body {
   margin-top: 100px;
 }
 
+.pin-green {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: url('/img/green.svg');
+  background-repeat: no-repeat;
+  background-position: left bottom -120px;
+  min-height: 325px;
+  margin-bottom: 50px;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+
+.pin-green .text {
+  margin-left: 190px;
+  flex: 1.5;
+  margin-right: 30px;
+}
+
+.pin-green .text h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  padding: 25px 0;
+  margin-top: 30px;
+}
+
+.pin-green .text p {
+  text-align: justify;
+}
+
+.pin-green .image {
+  flex: 2;
+}
+
 @media (max-width: 980px) {
 	.header-home {
 		width: 100%;
@@ -135,7 +171,19 @@ body {
 
 	.header-home {
 		padding-bottom: 20px;
-	}
+  }
+
+  .pin-green {
+    flex-direction: column;
+    align-items: center;
+    background: none;
+  }
+
+  .pin-green .text {
+    margin-left: 0px;
+    flex: 1;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 400px) {
