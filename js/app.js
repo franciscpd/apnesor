@@ -6,6 +6,14 @@ const fundoNavBar = function() {
   }
 }
 
+const exibeBotao = function() {
+  if ($(window).scrollTop() > ($("#header").height() / 2)) {
+    $("#btnTopo").removeClass("d-none");
+  } else {
+    $("#btnTopo").addClass("d-none");
+  }
+}
+
 $(document).ready(function(){
   fundoNavBar();
 });
@@ -13,23 +21,8 @@ $(document).ready(function(){
 $(function() {
   $(window).on("scroll", function() {
     fundoNavBar();
+    exibeBotao();
   });
 })
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-        document.getElementById("btnTopo").style.display = "block";
-    } else {
-        document.getElementById("btnTopo").style.display = "none";
-    }
-}
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-};
 new WOW().init();
-
-
