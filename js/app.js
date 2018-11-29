@@ -7,3 +7,5 @@ $(function() {
     }
   });
 });
+
+new WOW().init();
