@@ -246,3 +246,21 @@ body {
 		max-height: 291px;
 	}
 }
+
+input[type=text] {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #EFEFEF;
+}
+
+input[type=email] {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #EFEFEF;
+}
+
+#mensagem {
+  background-color: #EFEFEF;
+}
