@@ -85,7 +85,6 @@ body {
 }
 
 .efeito-bg {
-  margin-top: 50px;
 	height: 100%;
 	background: url('/img/efeito-bg.svg');
   padding: 76px 127px 146px 146px;
@@ -133,11 +132,9 @@ body {
   align-items: center;
   background: url('/img/green.svg');
   background-repeat: no-repeat;
-  background-position: left bottom -120px;
+  background-position: left -20px bottom -120px;
   min-height: 325px;
   margin-bottom: 50px;
-  -webkit-transition: width 2s; /* Safari */
-  transition: width 2s;
 }
 
 .pin-green .text {
@@ -161,6 +158,43 @@ body {
 
 .pin-green .image {
   flex: 2;
+}
+
+.pin-blue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: url('/img/blue.svg');
+  background-repeat: no-repeat;
+  background-position: bottom -100px right -31px;
+  min-height: 325px;
+  padding-bottom: 70px;
+}
+
+.pin-blue .text {
+  flex: 1;
+}
+
+.pin-blue .text h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  padding: 15px 0;
+}
+
+.pin-blue .text li {
+  list-style: none;
+  line-height: 30px;
+}
+
+.pin-blue .text li a {
+  text-decoration: none;
+}
+
+.pin-blue .image {
+  flex: 1;
+  text-align: center;
 }
 
 @media (max-width: 980px) {
