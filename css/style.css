@@ -116,6 +116,11 @@ body {
 
 .efeito-bg h2 {
   margin-bottom: 64px;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 
 .efeito-bg .opcoes {
@@ -126,9 +131,29 @@ body {
   flex-wrap: wrap;
 }
 
-.efeito-bg .opcoes img {
-  max-width: 207px;
-  max-height: 207px;
+.efeito-bg .opcoes .item {
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: 197px;
+  height: 197px;
+  display: flex;
+  justify-content: center;
+}
+
+.efeito-bg .opcoes .item-doacao-mensal {
+  background-image: url('/img/doacao-mensal.svg');
+}
+
+.efeito-bg .opcoes .item-doacao-unica {
+  background-image: url('/img/doacao-unica.svg');
+}
+
+.efeito-bg .opcoes .item-voluntariado {
+  background-image: url('/img/voluntariado.svg');
+}
+
+.efeito-bg .opcoes .item-adote {
+  background-image: url('/img/adote.svg');
 }
 
 .contato {
@@ -251,6 +276,13 @@ body {
     background: none;
   }
 
+  .efeito-bg {
+    padding: 36px 67px 76px 76px;
+  }
+
+  .efeito-bg .opcoes .item {
+    margin-bottom: 30px
+  }
 }
 
 @media (max-width: 400px) {
@@ -263,6 +295,10 @@ body {
   .mosaico {
     height: auto;
     width: 100%;
+  }
+
+  .efeito-bg {
+    padding: 16px 27px 36px 36px;
   }
 }
 
