@@ -16,6 +16,7 @@ const exibeBotao = function() {
 
 $(document).ready(function(){
   fundoNavBar();
+  exibeBotao();
 });
 
 $(function() {
