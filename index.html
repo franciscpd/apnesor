@@ -136,20 +136,20 @@
     </div>
   </section>
 
-  <div class="container">
-    <div class="row contato" id="contato">
+  <section id="contato" class="container wow slideInUp">
+    <div class="contato">
       <h2>Fale Conosco</h2>
       <div class="row">
         <div class="col-md-6">
-          <form action="#">
+          <form id="contact-form">
             <div class="form-group">
               <label for="nome" class="d-none">Nome</label>
-              <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
+              <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" required>
             </div>
 
             <div class="form-group">
               <label for="email" class="d-none">Email</label>
-              <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
             </div>
 
             <div class="form-group">
@@ -159,8 +159,9 @@
 
             <div class="form-group">
               <label for="mensagem" class="d-none">Mensagem</label>
-              <textarea name="mensagem" id="mensagem" class="form-control" placeholder="Mensagem" cols="30" rows="10"></textarea>
+              <textarea name="mensagem" id="mensagem" class="form-control" placeholder="Mensagem" cols="30" rows="10" required minlength="20"></textarea>
             </div>
+            <button class="btn btn-primary btn-chamada" type="submit" id="contact-form-submit">Enviar</button>
           </form>
         </div>
         <div class="col-md-6">
@@ -168,11 +169,11 @@
           <p>Rua Manoel Gomes Gonçalves, 616<br>
           Jardim Padroeira II - Osasco - SP<br>
           CEP: 06162-200<br>
-          Fone: (11) 0000-0000</p>
+          Fone: (11) 4556-3195 / 6296-1073</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!--Botão de topo-->
   <a href="#"  class="btn btn-topo d-none" id="btnTopo" title="Voltar para o topo"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>

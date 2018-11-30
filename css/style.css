@@ -156,11 +156,6 @@ body {
   background-image: url('/img/adote.svg');
 }
 
-.contato {
-  padding: 18px 60px;
-  margin-top: 30px;
-}
-
 .text-header {
   max-width: 382px;
   margin-left: 20px;
@@ -244,6 +239,25 @@ body {
 .pin-blue .image {
   flex: 1;
   text-align: center;
+}
+
+.contato {
+  padding: 18px 60px;
+  margin-top: 30px;
+}
+
+.contato h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contato h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 980px) {
