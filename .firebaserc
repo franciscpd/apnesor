@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "apnesor-d8265",
+    "production": "apnesor-f32f1"
+  }
+}
