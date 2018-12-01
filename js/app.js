@@ -1,8 +1,12 @@
 const fundoNavBar = function() {
-  if ($(window).scrollTop() > $("#navbar").height()) {
+  if (!$('#navbarResponsive').is(':visible')) {
     $("#navbar").addClass("navbar-bg");
   } else {
-    $("#navbar").removeClass("navbar-bg");
+    if ($(window).scrollTop() > $("#navbar").height()) {
+      $("#navbar").addClass("navbar-bg");
+    } else {
+      $("#navbar").removeClass("navbar-bg");
+    }
   }
 }
 

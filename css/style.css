@@ -314,6 +314,26 @@ body {
   .efeito-bg {
     padding: 16px 27px 36px 36px;
   }
+
+  .text-header h1 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+  }
+
+  .contato {
+    padding: 18px 10px;
+    margin-top: 30px;
+  }
+
+  .contato .info {
+    margin-top: 20px;
+  }
+
+  .footer {
+    line-height: 32px;
+  }
 }
 
 input[type=text] {
